@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
     port: 8889,
     user: "root",
     password: "root",
-    database: burgers_db
+    database: "burgers_db"
 })
 
 connection.connect(function(err) {
@@ -15,10 +15,6 @@ connection.connect(function(err) {
 })
 
 // export the connection
-//
-//
-////////////////////////
 
-
-module.exports();
+module.exports = connection;
 
